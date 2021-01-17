@@ -1,0 +1,25 @@
+plugins {
+    id 'application'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'Main'
+    }
+}
+
+run {
+    standardInput = System.in
+}
+
+application {
+    setMainClassName("Main")
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13'
+}
